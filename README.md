@@ -1,6 +1,8 @@
+⚠️ This is mostly vibe-coded. Proceed with caution.
+
 # LA Restaurant Map Builder
 
-A tool to parse LA Times restaurant data and automatically look up addresses using Google Places API, then export to formats ready for Google My Maps.
+A tool to parse LA restaurant data and automatically look up addresses using Google Places API, then export to formats ready for Google My Maps.
 
 ## Features
 
@@ -50,7 +52,7 @@ pnpm run parse
 
 This generates:
 
-- `data/la-times-101-best-2025.csv` - CSV format for Google My Maps
+- `data/restaurants-2025.csv` - CSV format for Google My Maps
 
 ### Step 2: Look Up Addresses
 
@@ -75,14 +77,14 @@ The tool will:
 - Auto-accept when only one match is found
 - Prompt you to select when multiple locations exist
 - Allow manual address entry when needed
-- Update `la-times-101-best-2025.csv` with addresses
+- Update `restaurants-2025.csv` with addresses
 
 ### Step 3: Import to Google My Maps
 
 1. Go to https://mymaps.google.com
 2. Create a new map
 3. Click "Import"
-4. Upload `data/la-times-101-best-2025.csv`
+4. Upload `data/restaurants-2025.csv`
 5. Map the columns: Name → Name, Address → Address
 6. Google My Maps will geocode the addresses
 7. Customize your map with colors, icons, and layers
@@ -116,8 +118,8 @@ restaurant-map/
 │   ├── make-csv.ts             # Restaurant parser
 │   └── address-lookup.ts       # Address lookup (Google Places API)
 ├── data/
-│   ├── la-times-101-best-2025.txt         # Input: Raw restaurant data
-│   └── la-times-101-best-2025.csv         # Output: CSV for Google My Maps
+│   ├── restaurants-2025.txt         # Input: Raw restaurant data
+│   └── restaurants-2025.csv         # Output: CSV for Google My Maps
 ├── api.example.env             # API key template
 ├── api.env                     # Your API key (gitignored)
 ├── package.json
@@ -138,7 +140,7 @@ restaurant-map/
 
 - Select a different option from the multiple results
 - Choose "Enter address manually" from the prompt
-- Edit `data/la-times-101-best-2025.csv` directly afterward
+- Edit `data/restaurants-2025.csv` directly afterward
 
 ## References
 

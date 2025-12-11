@@ -4,8 +4,8 @@
   "description": "LA Restaurant Map Builder with Address Lookup",
   "type": "module",
   "scripts": {
-    "parse": "node src/make-csv.ts data/la-times-101-best-2025.txt",
-    "lookup": "node src/address-lookup.ts data/la-times-101-best-2025.csv"
+    "parse": "node src/make-csv.ts data/restaurants-2025.txt",
+    "lookup": "node src/address-lookup.ts data/restaurants-2025.csv"
   },
   "keywords": [],
   "author": "",

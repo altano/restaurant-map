@@ -346,7 +346,7 @@ function serializeRestaurantsCSV(restaurants: Restaurant[]): string {
 
 async function main(): Promise<void> {
   try {
-    const inputFile = process.argv[2] || "data/la-times-101-best-2025.csv";
+    const inputFile = process.argv[2] || "data/restaurants-2025.csv";
 
     console.log(`${"=".repeat(80)}`);
     console.log("GOOGLE PLACES API ADDRESS LOOKUP");
