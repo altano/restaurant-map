@@ -1,0 +1,22 @@
+{
+  "name": "restaurant-map",
+  "version": "1.0.0",
+  "description": "LA Restaurant Map Builder with Address Lookup",
+  "type": "module",
+  "scripts": {
+    "parse": "node src/make-csv.ts data/la-times-101-best-2025.txt",
+    "lookup": "node src/address-lookup.ts data/la-times-101-best-2025.csv"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parse": "^6.1.0",
+    "csv-stringify": "^6.6.0",
+    "typescript": "^5.9.3",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0"
+  }
+}

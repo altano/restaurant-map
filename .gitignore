@@ -1,0 +1,7 @@
+nixkpgs-fmt
+node_modules
+result
+result-*
+.cache
+.devbox
+api.env
